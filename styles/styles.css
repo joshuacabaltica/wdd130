@@ -24,12 +24,7 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-p {
-    padding: 0rem;
-}
-p {
-    padding: 10px;
-}
+p { padding: 0;}
 aside{
     width: 20rem;
     margin: 1rem;
