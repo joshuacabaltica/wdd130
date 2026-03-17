@@ -1,0 +1,51 @@
+main {
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 390px;
+    
+}
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(58, 57, 57);
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 300px;
+    padding: 0.03px;
+    
+}
+h1{
+    font-size: 1.8rem;
+}
+
+img {
+    
+    width: 390px;
+    box-shadow: 0px 5px 30px rgb(57, 56, 56);
+}
+section {
+    background-color: rgb(211, 213, 214);
+    padding: 10px;
+    border: 1px solid black;
+    margin: 20px 0
+}
+section p{
+    margin: 19px;
+    font-size: 15px;
+    
+}
+section h2{
+    ;
+    border-bottom: solid;
+    padding: 10px;
+    margin: 0;
+}
+    
+footer {
+  background-color: rgb(58, 57, 57); 
+  color: white;
+  text-align: center;
+  margin: 0 300px;
+  font-size: 17px;
+  padding: 1px;
+}
