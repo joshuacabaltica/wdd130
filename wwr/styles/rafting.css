@@ -75,6 +75,7 @@ article{
   width: 96%;
   bottom: 8px;
   color: #fff;
+  
 }
 .hero article img{
   float: right;
@@ -88,6 +89,7 @@ section h2{
   text-align: center;
   background-color: var(--accent1-color);
   color: white;
+  margin: 0 -25px;
 }
   
   
