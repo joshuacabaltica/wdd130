@@ -74,6 +74,7 @@ article{
   background-color: hsl(42, 79%, 13%, 0.5 ); 
   width: 96%;
   bottom: 8px;
+  color: #fff;
 }
 .hero article img{
   float: right;
