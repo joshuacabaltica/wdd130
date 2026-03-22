@@ -59,7 +59,7 @@ h1 {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #220606; /* white text – make sure there is enough contrast with the background-color */
+  color: #b96a6a; /* white text – make sure there is enough contrast with the background-color */
 }
 article{
   position: absolute
