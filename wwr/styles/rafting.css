@@ -3,9 +3,9 @@
   /* forest green */
   --secondary-color: #f4a261;
   /* warm sand */
-  --accent1-color: #264653;
+  --accent1-color: hsl(197, 37%, 24%);
   /* dark slate blue */
-  --accent2-color: #3d2d07;
+  --accent2-color: hsl(42, 79%, 13%);
   /* light golden yellow */
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
@@ -44,6 +44,7 @@ h1, h2 {
 
 .socialmedia a {
   text-decoration: none;
+ 
 }
 
 /* Style the Hero Div with Overlays */
@@ -56,6 +57,9 @@ h1, h2 {
   width: 100%;
   height: auto;
 }
+.hero article{
+  position: absolute;
+}
 
 h1 {
   position: absolute;
@@ -64,14 +68,36 @@ h1 {
   padding: 16px;
   text-align: center;
   opacity: 0.7;
-  background-color: var(--accent1-color);
+  background-color: var(--accent2-color);
   color: #fff; /* white text – make sure there is enough contrast with the background-color */
 }
 article{
   position: absolute;
+  background-color: hsl(42, 79%, 13%, 0.5 ); 
+  width: 96%;
+  bottom: 8px;
 }
 .hero article img{
   float: right;
   width: 125px;
 }
+footer p{
+  border-top: 1px solid black;
+  
+}
+section h2{
+  text-align: center;
+  background-color: var(--accent1-color);
+  margin: ;
+  color: white;
+  
+  
+
+
+
+  
+
+  
+  
+
 
