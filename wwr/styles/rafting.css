@@ -3,8 +3,6 @@
   /* forest green */
   --accent1-color: hsl(197, 37%, 24%);
   /* dark slate blue */
-  --accent2-color: hsl(42, 79%, 13%);
-  /* light golden yellow */
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -20,16 +18,24 @@ body {
   color: var(--accent1-color);
 }
 
+footer,
 header,
-main,
-footer {
-  width: 840x;
+main {
+  width: 840px;
   margin: 0 auto;
 }
-header img{
- width: 70px;
- height: 70px;
+
+header {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.1fr;
+  align-items: center;
 }
+
+header img {
+  width: 70px;
+  height: 70px;
+}
+
 nav,
 p,
 section,
@@ -38,27 +44,30 @@ article {
   padding: 8px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
 .socialmedia a {
   text-decoration: none;
- 
+
 }
 
 /* Style the Hero Div with Overlays */
 
-.hero{
+.hero {
   position: relative;
 }
-.hero img{
+
+.hero img {
   display: block;
   width: 100%;
   height: auto;
 }
-.hero article{
+
+.hero article {
   position: absolute;
 }
 
@@ -70,27 +79,27 @@ h1 {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff; /* white text – make sure there is enough contrast with the background-color */
+  color: #fff;
+  /* white text – make sure there is enough contrast with the background-color */
 }
-article{
+
+.hero article {
   position: absolute;
-  background-color:var(--accent1-color); 
+  background-color: var(--accent1-color);
   width: 96%;
   bottom: 8px;
   color: #fff;
   opacity: 0.7;
-  
+
 }
-.hero article img{
+
+.hero article img {
   float: right;
   width: 100px;
   margin-left: 10px;
 }
 
-
-  
-
-section h2{
+section h2 {
   text-align: center;
   background-color: var(--accent1-color);
   color: white;
@@ -98,48 +107,33 @@ section h2{
   padding: 1rem;
 }
 
-header{
-  display: grid;
-  grid-template-columns: 0.2fr 1fr 0.1fr ;
-  margin: 1rem;
-  align-items: center;
-}
-nav ul{
+nav ul {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  
+
 }
-nav a{
+
+nav a {
   text-decoration: none;
 }
 
-.history{
-  display: flex; 
+.history {
+  display: flex;
   justify-content: space-evenly;
   margin: 2rem;
 
 }
-.adventure{
+
+.adventure {
   display: flex;
   justify-content: space-around;
-  margin: 2rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
-footer{
+footer {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid black;
 }
-
-
-
-
-
-  
-
-  
-  
-
-
