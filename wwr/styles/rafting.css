@@ -77,7 +77,7 @@ h1 {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff;
+  color: white;
   
 }
 
@@ -86,7 +86,7 @@ h1 {
   background-color: var(--accent1-color);
   width: 96%;
   bottom: 8px;
-  color: #fff;
+  color: white;
   opacity: 0.7;
 
 }
@@ -132,6 +132,6 @@ nav a {
 
 footer {
   display: flex;
-  justify-content: end;
-  border-top: 1px solid black;
+  justify-content: space-between;
+  border-top: 1px solid var(--accent1-color)
 }
