@@ -1,8 +1,9 @@
 :root {
-  --primary-color: #215321;
+  --primary-color: #215421;
   /* forest green */
-  --accent1-color: hsl(197, 37%, 24%);
+  --accent1-color: #274754;
   /* dark slate blue */
+  --font-color: #ffffff;
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -77,7 +78,7 @@ h1 {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: white;
+  color: var(--font-color);
   
 }
 
@@ -86,7 +87,7 @@ h1 {
   background-color: var(--accent1-color);
   width: 96%;
   bottom: 8px;
-  color: white;
+  color: var(--font-color);
   opacity: 0.7;
 
 }
@@ -100,7 +101,7 @@ h1 {
 section h2 {
   text-align: center;
   background-color: var(--accent1-color);
-  color: white;
+  color: var(--font-color);
   margin: 0 -25px;
   padding: 1rem;
 }
