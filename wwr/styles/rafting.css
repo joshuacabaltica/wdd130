@@ -134,6 +134,6 @@ nav a {
 
 footer {
   display: flex;
-  justify-content: end;
+  justify-content: start;
   border-top: 1px solid black;
 }
