@@ -86,10 +86,10 @@ article{
   width: 100px;
   margin-left: 10px;
 }
-footer p{
-  border-top: 1px solid black;
+
+
   
-}
+
 section h2{
   text-align: center;
   background-color: var(--accent1-color);
@@ -115,15 +115,23 @@ nav a{
 }
 
 .history{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  margin: 3rem;
+  display: flex; 
+  justify-content: space-evenly;
+  margin: 2rem;
+
+}
+.adventure{
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+  text-align: center;
 }
 
-
-
- 
+footer{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+}
 
 
 
