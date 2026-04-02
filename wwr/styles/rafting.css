@@ -30,11 +30,14 @@ header {
   display: grid;
   grid-template-columns: 0.2fr 1fr 0.1fr;
   align-items: center;
+  margin-top: 1rem;
+  
 }
 
 header img {
   width: 70px;
   height: 70px;
+  
 }
 
 nav,
@@ -70,7 +73,7 @@ h2 {
 
 
 
-h1 {
+.hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -136,3 +139,42 @@ footer {
   justify-content: space-between;
   border-top: 1px solid var(--accent1-color)
 }
+
+
+/* contact.html css */
+
+.intro{
+  text-align: center;
+  margin: 1.5rem;
+}
+
+form{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 3rem;
+}
+.name input, .email input{
+  padding: 10px;
+  margin: 3px;
+  width: 15rem;
+}
+.email input{
+  margin-left: 6px;
+}
+.radio{
+  display: flex;
+}
+.sradio{
+  display: flex;
+  flex-direction: column;
+}
+.a{
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+
+
+
+
