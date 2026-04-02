@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: rgb(88, 87, 87);
+    padding: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    width: ;width: 31rem;
+    margin: auto;
+    
+    
+    
+}
+form{
+    background-color: rgb(237, 236, 234);
+    border: solid 1px black;
+    display: grid;
+    padding: 1rem;
+    border-radius: 3px;
+    height: 35rem;
+    
+   
+}
+.q1{
+margin-top: 1rem;
+    display: grid;
+}
+.q2 {
+margin-top: 1rem;
+    display: grid;
+}
+.q3 {
+    
+    display: grid;
+}
+.q4 {
+    margin-top: 1rem;
+    display: grid;
+}
+.q4 p{
+  text-align: center;
+   background-color: rgb(88, 88, 88);
+   color: aliceblue;
+   width: 15rem;
+   padding: .5rem;
+   margin: 10px;
+
+}
+.q4 input{
+    width: 29rem;
+    padding: 10px;
+}
+.q3 select {
+    width: 29rem;
+}
+.q2 textarea{
+    width: 29rem;
+    padding: 2rem;
+}
+.q1 input {
+    width: 29rem;
+}
