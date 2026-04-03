@@ -152,6 +152,7 @@ form{
   display: flex;
   flex-direction: row-reverse;
   gap: 3rem;
+  justify-content: start;
 }
 .name input, .email input{
   padding: 10px;
@@ -163,15 +164,57 @@ form{
 }
 .radio{
   display: flex;
+  align-items: center;
+  margin: 1rem 0rem;
 }
+
 .sradio{
   display: flex;
   flex-direction: column;
+  gap: .5rem;
+  
 }
 .a{
   display: flex;
   flex-direction: row-reverse;
+  justify-content: start;
+  margin: 0rem 0rem 0rem 1rem;
 
+}
+.message{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.message textarea{
+  padding: 12px;
+  width: 19rem;
+}
+.checkbox{
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: small;
+  justify-content: start;
+}
+.button{
+  margin-top: 1rem;
+  display: grid;
+ grid-template-columns: 1fr .1fr;
+}
+
+section h1{
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.figs{
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+figcaption{
+  text-align: center;
 }
 
 
