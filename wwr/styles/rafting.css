@@ -152,7 +152,10 @@ footer {
   padding: 0;
 
 }
-
+h1{
+  text-align: center;
+ 
+}
 form{
   display: flex;
   flex-direction: row-reverse;
