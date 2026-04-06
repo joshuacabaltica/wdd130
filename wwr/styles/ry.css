@@ -1,0 +1,101 @@
+/* --- Global & Site Shell (Same across all pages) --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d40;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* --- 1. Hero Section: Absolute Positioning --- */
+.hero {
+    position: relative;
+    /* Container must be relative */
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    /* Full-width requirement */
+    height: 600px;
+    object-fit: cover;
+}
+
+.hero-msg {
+    position: absolute;
+    /* Positioned on the image */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centers the text perfectly */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Makes text readable */
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* --- 2. Newsletter & CTA Styles --- */
+.action-bar {
+    display: flex;
+    /* Flexbox for side-by-side on desktop */
+    justify-content: space-around;
+    padding: 3rem;
+    background-color: #e0f2f1;
+}
+
+.btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* --- 3. Content Grid: Multi-Column Layout --- */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two-column grid */
+    gap: 30px;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* --- Footer (Same across all pages) --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}

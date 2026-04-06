@@ -1,11 +1,10 @@
 :root {
-  --primary-color: #215421;
-  /* forest green */
-  --accent1-color: #274754;
-  /* dark slate blue */
+  --primary-color: #193819eb;
+  --secondary-color: #1414148a;
+  --accent1-color: #214721eb;;
   --font-color: #ffffff;
-  --heading-font: "Times New Roman", "Georgia", serif;
-  --body-font: Arial, Helvetica, sans-serif;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 * {
@@ -15,14 +14,14 @@
 }
 
 body {
-  font-family: var(--body-font);
+  font-family: var(--font-family);
   color: var(--accent1-color);
 }
 
 footer,
 header,
 main {
-  width: 840px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -30,14 +29,17 @@ header {
   display: grid;
   grid-template-columns: 0.2fr 1fr 0.1fr;
   align-items: center;
-  margin-top: 1rem;
-  
+  background-color: var(--accent1-color);
+  padding: 1px;
+  position: relative;
 }
 
 header img {
   width: 70px;
-  height: 70px;
-  
+  height: 60px;
+  position: relative;
+  left: 2rem;
+
 }
 
 nav,
@@ -46,11 +48,12 @@ section,
 article {
   margin: 16px;
   padding: 8px;
+
 }
 
 h1,
 h2 {
-  font-family: var(--heading-font);
+  font-family: var(--font-family);
   color: var(--primary-color);
 }
 
@@ -69,9 +72,8 @@ h2 {
   display: block;
   width: 100%;
   height: auto;
+
 }
-
-
 
 .hero h1 {
   position: absolute;
@@ -82,7 +84,7 @@ h2 {
   opacity: 0.7;
   background-color: var(--accent1-color);
   color: var(--font-color);
-  
+
 }
 
 .hero article {
@@ -110,6 +112,7 @@ section h2 {
 }
 
 nav ul {
+
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -118,6 +121,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
+  color: var(--font-color);
 }
 
 .history {
@@ -140,101 +144,212 @@ footer {
   border-top: 1px solid var(--accent1-color)
 }
 
-
 /* contact.html css */
 
-.intro{
+.intro {
   text-align: center;
   margin: 1.5rem;
 }
-.intro p{
+
+.intro p {
   margin: 0;
   padding: 0;
 
 }
-h1{
+
+h1 {
   text-align: center;
 }
-form{
+
+form {
   display: flex;
   flex-direction: row-reverse;
   gap: 3rem;
-  justify-content: start;
+  justify-content: center;
 }
-.name input, .email input{
+
+.name input,
+.email input {
   padding: 10px;
   margin: 3px;
   width: 15rem;
 }
 
-.email input{
+.email input {
   margin-left: 6px;
 }
-.radio{
+
+.radio {
   display: flex;
   align-items: center;
   margin: 1rem 0rem;
 }
 
-.sradio{
+.sradio {
   display: flex;
   flex-direction: column;
   gap: .5rem;
-  
+
 }
-.a{
+
+.a {
   display: flex;
   flex-direction: row-reverse;
   justify-content: start;
   margin: 0rem 0rem 0rem 1rem;
 
 }
-.message{
+
+.message {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
 }
-.message textarea{
+
+.message textarea {
   padding: 12px;
   width: 19rem;
 }
-.checkbox{
+
+.checkbox {
   display: flex;
   flex-direction: row-reverse;
   font-size: small;
   justify-content: start;
 }
-.button{
+
+.button {
   margin-top: 1rem;
   display: grid;
- grid-template-columns: 1fr .1fr;
+  grid-template-columns: 1fr .1fr;
 }
 
-section h1{
-text-align: center;
-margin-bottom: 1rem;
+section h1 {
+  text-align: center;
+  margin-bottom: 1rem;
 }
-section p{
+
+section p {
   text-align: center;
   font-size: xx-large;
   font-weight: bold;
 }
 
-.figs{
+.figs {
   display: flex;
   justify-content: space-around;
-  
-  
+
 }
-figcaption{
+
+figcaption {
   text-align: center;
 }
-.radio p{
+
+.radio p {
   margin: 0;
   padding: 0;
 }
 
+/* home page cSS */
 
+.heroh {
+  position: relative;
+}
 
+.heroh img {
+  display: block;
+  width: 100%;
+  height: auto;
 
+}
 
+.heroh h1 {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 7rem;
+  opacity: .8;
+  color: var(--font-color);
+  background-color:var(--secondary-color)
+}
+.heroh p{
+  position: absolute;
+  top: 3px;
+  width: 23%;
+  height: 9%;
+  font-size: 1.5rem;
+  color: var(--font-color);
+  top: 32.5rem;
+  left: 51rem;
+  font-weight: 400px;
+  text-align: start;
+  background-color: var(--secondary-color);
+  
+}
+.heroh a{
+  position: absolute;
+  background-color: var(--accent1-color);
+  color: var(--font-color);
+  text-decoration: none;
+  top: 36.5rem;
+  left: 62rem;
+  padding: 1rem;
+  border-radius: 3rem;
+
+}
+.join{
+  color: var(--accent1-color);
+  padding: 1.5rem;
+  margin: 2rem;
+  border-top: solid var(--accent1-color) 2px;
+  border-bottom: solid var(--accent1-color) 2px;
+  
+ 
+  
+}
+.join h2{
+  font-size: 3.5rem;
+  position: absolute;
+  left: 4.5rem;
+}
+.join p{
+  position: relative;
+  left: .6rem;
+   top: 4.1rem;
+  margin-bottom: 0;
+ 
+}
+.name1, .email1{
+   position: relative;
+   justify-content: right;
+   margin-right: 4rem;
+   margin-bottom: .5rem;
+   gap: .5rem;
+   bottom: 1.8rem;
+ 
+ 
+}
+.name1 label{
+  background-color:var(--accent1-color);
+  color: var(--font-color);
+  padding: .5rem;
+  width: 8rem;
+ text-align: center;
+ border-radius: .3rem;
+  
+}
+.email1 label{
+  background-color: var(--accent1-color);
+  color: var(--font-color);
+  padding: .5rem;
+  border-radius: .3rem;
+  width: 8rem;
+  text-align: center;
+}
+.join input{
+  width: 15rem;
+  padding-left: 1rem;
+ 
+
+}
