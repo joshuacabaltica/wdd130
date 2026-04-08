@@ -1,7 +1,8 @@
 :root {
-  --primary-color: #193819eb;
+  --darker-green: #0d250deb;
   --secondary-color: #1414148a;
-  --accent1-color: #214721eb;;
+  --accent1-color: #3f743feb;
+  ;
   --font-color: #ffffff;
   --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -29,7 +30,7 @@ header {
   display: grid;
   grid-template-columns: 0.2fr 1fr 0.1fr;
   align-items: center;
-  background-color: var(--accent1-color);
+  background-color: var(--darker-green);
   padding: 1px;
   position: relative;
 }
@@ -82,14 +83,15 @@ h2 {
   padding: 16px;
   text-align: center;
   opacity: 0.7;
-  background-color: var(--accent1-color);
+  background-color: var(--secondary-color);
   color: var(--font-color);
+  font-size: 5rem;
 
 }
 
 .hero article {
   position: absolute;
-  background-color: var(--accent1-color);
+  background-color: var(--secondary-color);
   width: 96%;
   bottom: 8px;
   color: var(--font-color);
@@ -105,7 +107,7 @@ h2 {
 
 section h2 {
   text-align: center;
-  background-color: var(--accent1-color);
+  background-color: var(--darker-green);
   color: var(--font-color);
   margin: 0 -25px;
   padding: 1rem;
@@ -148,7 +150,7 @@ footer {
 
 .intro {
   text-align: center;
-  margin: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .intro p {
@@ -159,6 +161,8 @@ footer {
 
 h1 {
   text-align: center;
+  color: var(--darker-green);
+  font-size: 3rem;
 }
 
 form {
@@ -224,12 +228,12 @@ form {
   grid-template-columns: 1fr .1fr;
 }
 
-section h1 {
+h1 {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-section p {
+.serve p {
   text-align: center;
   font-size: xx-large;
   font-weight: bold;
@@ -271,9 +275,10 @@ figcaption {
   font-size: 7rem;
   opacity: .8;
   color: var(--font-color);
-  background-color:var(--secondary-color)
+  background-color: var(--secondary-color)
 }
-.heroh p{
+
+.heroh p {
   position: absolute;
   top: 3px;
   width: 23%;
@@ -282,12 +287,13 @@ figcaption {
   color: var(--font-color);
   top: 32.5rem;
   left: 51rem;
-  font-weight: 400px;
+  font-weight: 400;
   text-align: start;
   background-color: var(--secondary-color);
-  
+
 }
-.heroh a{
+
+.heroh a {
   position: absolute;
   background-color: var(--accent1-color);
   color: var(--font-color);
@@ -296,50 +302,46 @@ figcaption {
   left: 62rem;
   padding: 1rem;
   border-radius: 3rem;
-
 }
-.join{
-  color: var(--accent1-color);
+
+.heroh a:hover {
+  background-color: var(--font-color);
+  color: black;
+}
+
+.join {
+  display: grid;
+  color: var(--font-color);
   padding: 1.5rem;
   margin: 2rem;
-  border-top: solid var(--accent1-color) 2px;
-  border-bottom: solid var(--accent1-color) 2px;
-  
- 
-  
+  background-color: #181818da;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 1rem;
+
 }
-.join h2{
-  font-size: 3.5rem;
-  position: absolute;
-  left: 4.5rem;
+
+.join h2 {
+  font-size: 3rem;
+  padding-left: 2rem;
 }
-.join p{
-  position: relative;
-  left: .6rem;
-   top: 4.1rem;
-  margin-bottom: 0;
- 
+
+.join p {
+  text-align: start;
+
+  padding-left: 6rem;
 }
-.name1, .email1{
-   position: relative;
-   justify-content: right;
-   margin-right: 4rem;
-   margin-bottom: .5rem;
-   gap: .5rem;
-   bottom: 1.8rem;
- 
- 
-}
-.name1 label{
-  background-color:var(--accent1-color);
+
+.name1 label {
+  background-color: var(--accent1-color);
   color: var(--font-color);
   padding: .5rem;
   width: 8rem;
- text-align: center;
- border-radius: .3rem;
-  
+  text-align: center;
+  border-radius: .3rem;
+
 }
-.email1 label{
+
+.email1 label {
   background-color: var(--accent1-color);
   color: var(--font-color);
   padding: .5rem;
@@ -347,9 +349,204 @@ figcaption {
   width: 8rem;
   text-align: center;
 }
-.join input{
+
+.join input {
   width: 15rem;
   padding-left: 1rem;
- 
+}
+
+.name1,
+.email1 {
+  display: flex;
+  margin-right: 4rem;
+  margin-bottom: .5rem;
+  margin-top: 2rem;
+  gap: .5rem;
+  bottom: 1.8rem;
+}
+
+.purpose {
+  border-top: solid var(--darker-green) .2rem;
+  border-bottom: solid var(--darker-green) .2rem;
+
+}
+
+.safety {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+  border-bottom: solid var(--darker-green) .2rem;
+
+}
+
+.scenery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1rem;
+
+}
+
+.safetymsg {
+  flex-direction: column;
+
+}
+
+.safetymsg h3 {
+  font-size: 3rem;
+  color: var(--accent1-color);
+  text-align: center;
+}
+
+.safetymsg p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--darker-green);
+
+}
+
+.safety img {
+  margin: .1rem 1rem 2rem 5rem;
+  box-shadow: black 3px 3px 1rem;
+  border: 3px rgb(167, 188, 167) solid;
+}
+
+.scenery img {
+  margin: 0rem 1rem 2rem 7rem;
+  box-shadow: black 3px 3px 1rem;
+  border: 3px rgb(167, 188, 167) solid;
+
+}
+
+.scenery p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--darker-green);
+}
+
+.scenery h3 {
+  font-size: 3rem;
+  color: var(--accent1-color);
+  text-align: center;
+}
+
+.scene2 {
+  flex-direction: column;
+}
+
+/* trips.css */
+.call {
+  background-color: rgb(241, 240, 240);
+  margin: 0rem 0rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: solid var(--darker-green) .5rem;
+
+}
+
+.vertical {
+  border: solid var(--darker-green);
+  width: 40rem;
+  justify-self: center;
+
+}
+
+.call h2 {
+  background-color: rgb(241, 240, 240);
+  margin: 0 0 0 4rem;
+  color: rgb(90, 90, 90);
+  font-size: 3.5rem;
+}
+
+.call p {
+  font-size: 1.5rem;
+  margin: 0 0 2rem 1.6rem;
+}
+
+.call a {
+  position: absolute;
+  background-color: var(--accent1-color);
+  color: var(--font-color);
+  top: 345px;
+  left: 577px;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.call a:hover {
+  background-color: var(--darker-green);
+  color: var(--font-color);
+}
+
+.p12 {
+  background-color: var(--font-color);
+  color: var(--darker-green);
+  margin-top: 3rem;
+  display: flex;
+  justify-self: center;
+  font-size: 2rem;
+  font-weight: 400;
+
+}
+
+.tripdes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2rem;
+
+}
+
+.tripdes figcaption {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 4rem 0;
+
+}
+
+.trip1 img {
+  border: var(--accent1-color) solid .2rem;
+
+}
+
+.trip2 img {
+  border: var(--accent1-color) solid .2rem;
+
+}
+
+.trip3 img {
+  border: var(--accent1-color) solid .2rem;
+
+}
+
+.htable {
+  font-size: 2rem;
+  text-align: center;
+  background-color: var(--darker-green);
+  color: white;
+
+}
+
+table {
+  margin: 0 0 2rem 0;
+  justify-self: center;
+  text-align: start;
+  width: 70rem;
+  letter-spacing: 1px;
+  border-collapse: collapse;
+}
+
+.triphead th {
+  font-size: 1.5rem;
+  text-align: start;
+  border-bottom: solid var(--accent1-color);
+
+}
+
+#week,
+#sat {
+  background-color: aliceblue;
 
 }
